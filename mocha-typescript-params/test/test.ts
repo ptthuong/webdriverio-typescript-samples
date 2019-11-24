@@ -9,6 +9,7 @@ class Suite {
     @pending(!SampleProvider.dataExists(process.env.TEST_LANG))
     @params(SampleProvider.getData(process.env.TEST_LANG))
     @params.naming(({ data, language }) => `test with language ${language} supported ${SampleProvider.dataExists(process.env.TEST_LANG)}`)
+    
     test({ data, language }) {
         assert.equal(`こんにちは`, data.hello);
         assert.equal(`世界`, data.world);
