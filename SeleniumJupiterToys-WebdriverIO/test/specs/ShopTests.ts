@@ -1,6 +1,6 @@
 import { BaseTest } from "./BaseTest";
 import { HomePage } from "../model/pages/HomePage";
-import { suite, test } from "mocha-typescript"
+import { suite, test } from "@testdeck/mocha"
 import { expect } from 'chai';
 import { ShopPage } from "../model/pages/ShopPage";
 import { Product } from "../model/products/Product";

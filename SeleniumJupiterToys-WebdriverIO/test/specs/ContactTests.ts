@@ -1,5 +1,5 @@
 import { BaseTest } from "./BaseTest";
-import { suite, test } from "mocha-typescript"
+import { suite, test } from "@testdeck/mocha"
 import { expect } from 'chai';
 import { HomePage } from "../model/pages/HomePage";
 import { ContactPage } from "../model/pages/ContactPage";
