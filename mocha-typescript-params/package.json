@@ -1,0 +1,19 @@
+{
+  "name": "mocha-typescript-params",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts ./mocha.opts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testdeck/mocha": "0.0.6",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.11",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
