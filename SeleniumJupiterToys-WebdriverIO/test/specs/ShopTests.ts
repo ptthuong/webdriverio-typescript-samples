@@ -12,10 +12,7 @@ export class ShopTests extends BaseTest {
         let homePage = new HomePage();
         homePage.clickShopMenu();
         let shopPage = new ShopPage();
-        let product:Product = shopPage.getProduct(p => {
-            console.log(p)
-            return p.getTitle() == 'Teddy Bear'
-        });
+        let product:Product = shopPage.getProduct(p => p.getTitle() == 'Teddy Bear');
         expect(product.getPrice()).to.equal(12.99);
     }
 }
