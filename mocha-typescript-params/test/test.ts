@@ -8,7 +8,6 @@ class Suite {
     @params(SampleProvider.getData(process.env.TEST_LANG))
     @params.naming(({ data, language }) => `with one language ${language}`)
     test({ data, language }) {
-        console.log(`Running assertions for: ${language}`);
         assert.equal(`hello in ${language}`, data.hello);
         assert.equal(`world in ${language}`, data.world);
     }
