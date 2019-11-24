@@ -5,7 +5,7 @@ import { SampleProvider } from './data/SampleProvider';
 
 @suite
 class Suite {
-    @params(SampleProvider.getData(process.env.TEST_LANG), 'custom test name')
+    @params(SampleProvider.getData(process.env.TEST_LANG), 'one language from env var')
     test({data, language }) {
         console.log('Running assertions for: '+language);
         assert.equal('hello in '+language,data.hello);

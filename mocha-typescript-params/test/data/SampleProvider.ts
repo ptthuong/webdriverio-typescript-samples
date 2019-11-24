@@ -2,9 +2,9 @@ import { SampleData } from './SampleData'
 export class SampleProvider {
     static getDataset(): SampleData[]{
         let dataset: SampleData[] = []
-        dataset.push({language:'english', data: { hello: 'hello', world: 'world' }});
-        dataset.push({language:'vietnamese', data: { hello: 'Chào thế', world: 'giới' }});
-        dataset.push({language:'japanese',data: { hello: 'こんにちは', world: '世界' }});
+        dataset.push(this.getData('english'));
+        dataset.push(this.getData('vietnamese'));
+        dataset.push(this.getData('japanese'));
         return dataset;
     }
 
